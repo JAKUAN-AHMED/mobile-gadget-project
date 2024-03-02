@@ -31,10 +31,10 @@ const displayPhones=(phones,isShowALL)=>{
         phoneCard.innerHTML=`
         <figure><img src="${phone.image}" /></figure>
         <div class="card-body">
-            <h2 class="card-title">${phone.phone_name}</h2>
+            <h2 class="card-title text-center items-center justify-center">${phone.phone_name}</h2>
             <p>There are many variations of passages of available, but the majority have suffered</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+            <div class="card-actions justify-center">
+                <button class="btn btn-primary">Show Details</button>
             </div>
         </div>
         ` 
