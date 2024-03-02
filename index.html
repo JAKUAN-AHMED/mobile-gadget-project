@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE-Hunterx3</title>
+    <!-- daisy ui and tailwindCss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="text-center p-4 m-4">
+        <h2 class="text-4xl">Hunting phone</h2>
+    </header>
+    <main class="container mx-auto mt-4">
+        <!-- search field -->
+        <div class="bg-sky-300 m-4 p-4 space-y-2 text-center">
+            <input id="search-field" type="text" placeholder="search" class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+            <!-- another search field -->
+            <!--<input class="input input-bordered w-full max-w-xs" type="search" id="search-field2" placeholder="search here">
+            <button onclick="handleSearch2()" class="btn btn-active btn-primary">Search</button>-->
+        </div>
+        <!-- search result -->
+        <section>
+            <!-- spinner or loader -->
+            <div id="loading-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              
+            </div>
+            <!-- show all button -->
+            <div id="show-all-container" class="m-4 hidden text-center">
+                <button onclick="handLEShowALL()" class="btn btn-accent">Show All</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/phone.js"></script>
+</body>
+</html>
